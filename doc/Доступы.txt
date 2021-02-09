@@ -1,0 +1,19 @@
+Логин development
+Пароль gKhG9C9OidFN
+email development-gryanko@mail.ru
+
+
+http://site/manager-panel/
+Менеджер
+Логин super-admin
+Пароль dm2HwpRNEqfX
+Email dev68-tmb@rambler.ru
+
+База данных
+davydovseo_test6
+логин davydovseo_test6
+пароль RNEqfX34HwpRN
+
+Хост
+
+FTP

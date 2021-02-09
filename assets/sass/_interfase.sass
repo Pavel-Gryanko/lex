@@ -1,0 +1,256 @@
+body.compensate-for-scrollbar
+  overflow: auto
+
+.main-container
+  max-width: 1540px
+
+a.link-up
+  display: inline-block
+  width: 48px
+  height: 48px
+  background: url("../img/up.png") left top no-repeat
+  background-size: contain
+  opacity: 0
+  position: fixed
+  right: 3%
+  bottom: 10px
+  z-index: 2000
+  transition: 0.6s
+  visibility: hidden
+  &_show
+    opacity: 1
+    visibility: visible
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    cursor: pointer
+
+.text
+  &-center
+    text-align: center
+  &-left
+    text-align: left
+  &-right
+    text-align: right
+
+.df
+  display: flex
+  &-al, &-ar, &-ac
+    display: flex
+  &-al
+    align-items: flex-start
+  &-ar
+    align-items: flex-end
+  &-ac
+    align-items: center
+  &-jc
+    display: flex
+    justify-content: center
+  &-js
+    display: flex
+    justify-content: flex-start
+  &-je
+    display: flex
+    justify-content: flex-end
+  &-jsb
+    justify-content: space-between
+  &-jsa
+    justify-content: space-around
+  &-fc
+    flex-direction: column
+  &-fw
+    flex-wrap: wrap
+
+.stl
+  &-pl
+    &-30
+      padding-left: 30px
+  &-pr
+    &-50
+      padding-right: 50px
+  &-pt
+    &-10
+      padding-top: 10px
+    &-15
+      padding-top: 15px
+    &-20
+      padding-top: 20px
+    &-30
+      padding-top: 30px
+    &-40
+      padding-top: 40px
+  &-pb
+    &-10
+      padding-bottom: 10px
+    &-15
+      padding-bottom: 15px
+    &-20
+      padding-bottom: 20px
+    &-30
+      padding-bottom: 30px
+    &-40
+      padding-bottom: 40px
+    &-45
+      padding-bottom: 45px
+    &-50
+      padding-bottom: 50px
+    &-55
+      padding-bottom: 55px
+    &-60
+      padding-bottom: 60px
+  &-mt
+    &-10
+      margin-top: 50px
+    &-10
+      margin-top: 10px
+    &-15
+      margin-top: 15px
+    &-20
+      margin-top: 20px
+    &-30
+      margin-top: 30px
+    &-40
+      margin-top: 40px
+    &-50
+      margin-top: 50px
+    &-60
+      margin-top: 60px
+    &-70
+      margin-top: 70px
+    &-80
+      margin-top: 80px
+    &-90
+      margin-top: 90px
+    &-100
+      margin-top: 100px
+  &-mb
+    &-5
+      margin-bottom: 5px
+    &-10
+      margin-bottom: 10px
+    &-15
+      margin-bottom: 15px
+    &-20
+      margin-bottom: 20px
+    &-30
+      margin-bottom: 30px
+    &-40
+      margin-bottom: 40px
+    &-50
+      margin-bottom: 50px
+    &-60
+      margin-bottom: 60px
+    &-70
+      margin-bottom: 70px
+    &-80
+      margin-bottom: 80px
+    &-90
+      margin-bottom: 90px
+    &-100
+      margin-bottom: 100px
+  &-mr
+    &-10
+      margin-right: 10px
+    &-20
+      margin-right: 20px
+  &-tt-up
+    text-transform: uppercase
+
+.after-animated
+  position: relative
+  &::after
+    position: absolute
+    transition: .3s
+    content: ''
+    left: 0
+    bottom: -2px
+    height: 1px
+    width: 0%
+    background-color: #000
+    visibility: hidden
+  &:hover
+    &::after
+      width: 100%
+      visibility: visible
+
+.section-indent
+  margin-bottom: 70px
+
+.section-internal-indent
+  padding: 70px 0px
+
+.section-title
+  font-size: 4em
+  font-weight: 400
+  text-align: center
+.main-menu
+  & li.menu-item
+    margin-right: 10px
+    &:last-child
+      margin-right: 0px
+    & a
+      display: block
+      padding: 10px 15px
+      color: #6f6f6f
+      position: relative
+      text-decoration: none
+      transition: .3s
+      &:hover
+        background-color: #42b3e5
+        color: #ffffff
+        text-decoration: none
+  & li.current-menu-item
+    & a
+      background-color: #42b3e5
+      color: #ffffff
+
+.btn
+  color: #ffffff
+  padding: 14px 21px
+  display: inline-block
+  font-size: 2.2rem
+  transition: .4s
+  text-align: center
+  line-height: 1
+  &:hover
+    cursor: pointer
+    text-decoration: none
+  &_f
+    font-family: 'Gotham Pro', sans-serif
+    font-size: 2rem
+    font-weight: 500
+    border-radius: 10px
+    white-space: nowrap
+  &_grad-b
+    border: 3px solid #d31c54
+    padding: 14px 41px
+    &:hover
+      background-image: linear-gradient(to right, #f00b51 0%, #d31c54 48%, #ff6b28 100%)
+      border: 3px solid transparent
+      transform: scale(0.9)
+  &_grad
+    background-image: linear-gradient(to right, #f00b51 0%, #d31c54 48%, #ff6b28 100%)
+    &:hover
+      transform: scale(0.9)
+
+.set-title-line
+  position: relative
+  font-family: 'Segoe UI', sans-serif
+  font-size: 3rem
+  font-weight: 300
+  color: #fefefe
+  padding-left: 55px
+  &::after
+    position: absolute
+    content: ''
+    width: 42px
+    height: 2px
+    background-color: #d31c54
+    left: 0
+    top: 15px
