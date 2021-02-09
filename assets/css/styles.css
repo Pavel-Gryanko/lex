@@ -282,6 +282,10 @@ body.compensate-for-scrollbar {
   max-width: 1540px;
 }
 
+.middle-container {
+  max-width: 1324px;
+}
+
 a.link-up {
   display: inline-block;
   width: 48px;
@@ -380,171 +384,191 @@ a:hover {
 }
 
 .stl-pl-30 {
-  padding-left: 30px;
+  padding-left: 3rem;
 }
 
 .stl-pr-50 {
-  padding-right: 50px;
+  padding-right: 5rem;
 }
 
 .stl-pt-10 {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .stl-pt-15 {
-  padding-top: 15px;
+  padding-top: 1.5rem;
 }
 
 .stl-pt-20 {
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 .stl-pt-30 {
-  padding-top: 30px;
+  padding-top: 3rem;
 }
 
 .stl-pt-40 {
-  padding-top: 40px;
+  padding-top: 4rem;
 }
 
 .stl-pb-10 {
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .stl-pb-15 {
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
 }
 
 .stl-pb-20 {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .stl-pb-30 {
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 .stl-pb-40 {
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 
 .stl-pb-45 {
-  padding-bottom: 45px;
+  padding-bottom: 4.5rem;
 }
 
 .stl-pb-50 {
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
 }
 
 .stl-pb-55 {
-  padding-bottom: 55px;
+  padding-bottom: 5.5rem;
 }
 
 .stl-pb-60 {
-  padding-bottom: 60px;
+  padding-bottom: 6rem;
 }
 
 .stl-mt-10 {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .stl-mt-10 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .stl-mt-15 {
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .stl-mt-20 {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .stl-mt-30 {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .stl-mt-40 {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .stl-mt-50 {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .stl-mt-60 {
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 
 .stl-mt-70 {
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 .stl-mt-80 {
-  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 .stl-mt-90 {
-  margin-top: 90px;
+  margin-top: 9rem;
 }
 
 .stl-mt-100 {
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 
 .stl-mb-5 {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .stl-mb-10 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .stl-mb-15 {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .stl-mb-20 {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .stl-mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .stl-mb-40 {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .stl-mb-50 {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .stl-mb-60 {
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .stl-mb-70 {
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
 }
 
 .stl-mb-80 {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .stl-mb-90 {
-  margin-bottom: 90px;
+  margin-bottom: 9rem;
 }
 
 .stl-mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 
 .stl-mr-10 {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .stl-mr-20 {
-  margin-right: 20px;
+  margin-right: 2rem;
+}
+
+.stl-st-2_3 {
+  font-size: 2.3rem;
+}
+
+.stl-st-3 {
+  font-size: 3rem;
+}
+
+.stl-st-3_3 {
+  font-size: 3.3rem;
+}
+
+.stl-st-4 {
+  font-size: 4rem;
+}
+
+.stl-st-5 {
+  font-size: 5rem;
 }
 
 .stl-tt-up {
@@ -661,8 +685,10 @@ a:hover {
   font-family: 'Segoe UI', sans-serif;
   font-size: 3rem;
   font-weight: 300;
-  color: #fefefe;
+  color: #000000;
   padding-left: 55px;
+  display: block;
+  margin-bottom: 4rem;
 }
 
 .set-title-line::after {
@@ -800,17 +826,14 @@ a:hover {
   display: inline-block;
 }
 
-.footer-container {
-  max-width: 1324px;
-}
-
-.footer-container .set-title-line {
-  margin-bottom: 6rem;
-}
-
 .footer {
   background-color: #120b25;
   padding: 60px 10px;
+}
+
+.footer .set-title-line {
+  margin-bottom: 6rem;
+  color: #fefefe;
 }
 
 .footer-row {
@@ -828,6 +851,36 @@ a:hover {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 26px;
+}
+
+.reviews-area {
+  padding-top: 4rem;
+}
+
+.reviews-col {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.reviews-author-data {
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.reviews-author__adress {
+  font-style: normal;
+  display: inline-block;
+}
+
+.reviews-author-face {
+  display: block;
+  margin-bottom: 1rem;
+  width: 144px;
+  height: 144px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .content-area-page {
@@ -965,6 +1018,15 @@ a:hover {
   }
   .header__menu-btn-mob {
     display: block;
+  }
+  .reviews-author-face {
+    margin: 0 auto 1rem;
+  }
+  .reviews-author-data {
+    text-align: center;
+  }
+  .reviews-title {
+    text-align: center;
   }
 }
 

@@ -1,9 +1,9 @@
 body.compensate-for-scrollbar
   overflow: auto
-
 .main-container
   max-width: 1540px
-
+.middle-container
+  max-width: 1324px
 a.link-up
   display: inline-block
   width: 48px
@@ -20,17 +20,14 @@ a.link-up
   &_show
     opacity: 1
     visibility: visible
-
 img
   max-width: 100%
   height: auto
-
 a
   text-decoration: none
   &:hover
     text-decoration: none
     cursor: pointer
-
 .text
   &-center
     text-align: center
@@ -38,7 +35,6 @@ a
     text-align: left
   &-right
     text-align: right
-
 .df
   display: flex
   &-al, &-ar, &-ac
@@ -66,102 +62,111 @@ a
     flex-direction: column
   &-fw
     flex-wrap: wrap
-
 .stl
   &-pl
     &-30
-      padding-left: 30px
+      padding-left: 3rem
   &-pr
     &-50
-      padding-right: 50px
+      padding-right: 5rem
   &-pt
     &-10
-      padding-top: 10px
+      padding-top: 1rem
     &-15
-      padding-top: 15px
+      padding-top: 1.5rem
     &-20
-      padding-top: 20px
+      padding-top: 2rem
     &-30
-      padding-top: 30px
+      padding-top: 3rem
     &-40
-      padding-top: 40px
+      padding-top: 4rem
   &-pb
     &-10
-      padding-bottom: 10px
+      padding-bottom: 1rem
     &-15
-      padding-bottom: 15px
+      padding-bottom: 1.5rem
     &-20
-      padding-bottom: 20px
+      padding-bottom: 2rem
     &-30
-      padding-bottom: 30px
+      padding-bottom: 3rem
     &-40
-      padding-bottom: 40px
+      padding-bottom: 4rem
     &-45
-      padding-bottom: 45px
+      padding-bottom: 4.5rem
     &-50
-      padding-bottom: 50px
+      padding-bottom: 5rem
     &-55
-      padding-bottom: 55px
+      padding-bottom: 5.5rem
     &-60
-      padding-bottom: 60px
+      padding-bottom: 6rem
   &-mt
     &-10
-      margin-top: 50px
+      margin-top: 5rem
     &-10
-      margin-top: 10px
+      margin-top: 1rem
     &-15
-      margin-top: 15px
+      margin-top: 1.5rem
     &-20
-      margin-top: 20px
+      margin-top: 2rem
     &-30
-      margin-top: 30px
+      margin-top: 3rem
     &-40
-      margin-top: 40px
+      margin-top: 4rem
     &-50
-      margin-top: 50px
+      margin-top: 5rem
     &-60
-      margin-top: 60px
+      margin-top: 6rem
     &-70
-      margin-top: 70px
+      margin-top: 7rem
     &-80
-      margin-top: 80px
+      margin-top: 8rem
     &-90
-      margin-top: 90px
+      margin-top: 9rem
     &-100
-      margin-top: 100px
+      margin-top: 10rem
   &-mb
     &-5
-      margin-bottom: 5px
+      margin-bottom: 0.5rem
     &-10
-      margin-bottom: 10px
+      margin-bottom: 1rem
     &-15
-      margin-bottom: 15px
+      margin-bottom: 1.5rem
     &-20
-      margin-bottom: 20px
+      margin-bottom: 2rem
     &-30
-      margin-bottom: 30px
+      margin-bottom: 3rem
     &-40
-      margin-bottom: 40px
+      margin-bottom: 4rem
     &-50
-      margin-bottom: 50px
+      margin-bottom: 5rem
     &-60
-      margin-bottom: 60px
+      margin-bottom: 6rem
     &-70
-      margin-bottom: 70px
+      margin-bottom: 7rem
     &-80
-      margin-bottom: 80px
+      margin-bottom: 8rem
     &-90
-      margin-bottom: 90px
+      margin-bottom: 9rem
     &-100
-      margin-bottom: 100px
+      margin-bottom: 10rem
   &-mr
     &-10
-      margin-right: 10px
+      margin-right: 1rem
     &-20
-      margin-right: 20px
+      margin-right: 2rem
+  &-st
+    &-2_3
+      font-size: 2.3rem
+    &-3
+      font-size: 3rem
+    &-3_3
+      font-size: 3.3rem
+    &-4
+      font-size: 4rem
+    &-5
+      font-size: 5rem
   &-tt-up
     text-transform: uppercase
-
 .after-animated
   position: relative
   &::after
@@ -178,13 +183,10 @@ a
     &::after
       width: 100%
       visibility: visible
-
 .section-indent
   margin-bottom: 70px
-
 .section-internal-indent
   padding: 70px 0px
-
 .section-title
   font-size: 4em
   font-weight: 400
@@ -209,7 +211,6 @@ a
     & a
       background-color: #42b3e5
       color: #ffffff
-
 .btn
   color: #ffffff
   padding: 14px 21px
@@ -238,14 +239,15 @@ a
     background-image: linear-gradient(to right, #f00b51 0%, #d31c54 48%, #ff6b28 100%)
     &:hover
       transform: scale(0.9)
-
 .set-title-line
   position: relative
   font-family: 'Segoe UI', sans-serif
   font-size: 3rem
   font-weight: 300
-  color: #fefefe
+  color: #000000
   padding-left: 55px
+  display: block
+  margin-bottom: 4rem
   &::after
     position: absolute
     content: ''
