@@ -1,9 +1,44 @@
 @media (max-width: 1366px)
   .container-page h1
     font-size: 4em
+  .sec-services__item
+    width: 100px
+  .sec-services__link-page
+    padding: 6rem 3rem
+    font-size: 4rem
+@media (max-width: 1250px)
+  .sec-services-area__col
+    width: 50%
+  .team-item
+    flex-direction: column
+  .team-item__face
+    margin-left: auto
+    margin-right: auto
+  .team-item__data
+    margin-bottom: 1.5rem
+  .team-item__name
+    text-align: center
+    padding-bottom: 1rem
+@media (max-width: 1200px)
+  .sec-services-area
+    flex-wrap: wrap
+    flex-direction: column
+  .sec-services-area__col
+    width: 100%
+  .sec-services
+    padding: 7rem 0 10rem
+  .sec-services__item-2, .sec-services__item-3, .sec-services__item-4, .sec-services__item-5, .sec-services__item-6, .sec-services__item-7
+    margin-top: 0rem
+  .sec-services__link-page
+    bottom: auto
+    top: -50px
 @media (max-width: 1024px)
   html, body
     font-size: 60.5%
+  .sec-services__item
+    width: 80px
+    font-size: 1.8rem
+    align-items: center
   .footer-row
     flex-direction: column
     justify-content: start
@@ -16,11 +51,19 @@
     padding-top: 20px
   .footer-row__item
     width: 100%
+  .sec-team-area
+    padding-top: 0
 @media (max-width: 768px)
   html, body
     font-size: 56.5%
   .header__menu-btn-mob
     display: block
+  .sec-reviews, .sec-application, .sec-team
+    padding: 4rem 0
+  .footer
+    padding: 4rem 1.5rem
+  .sec-application__title
+    padding-bottom: 3rem
   .reviews-author-face
     margin: 0 auto 1rem
   .reviews-author-data
@@ -28,6 +71,8 @@
   .reviews-title
     text-align: center
 @media (max-width: 620px)
+  .sec-application__title
+    font-size: 4rem
   .footer-btn
     flex-direction: column
     align-items: flex-start
@@ -36,7 +81,23 @@
     & .btn_grad
       margin-bottom: 20px
       margin-right: 0
+  .sec-services
+    background: none
+    background-image: linear-gradient(86deg, #d31c54 0%, #d31c54 29%, #c85320 100%)
+    border-top: 5px solid #fff
+    padding: 10rem 0
+  .sec-services__link-page
+    top: -102px
+  .sec-services-area__col
+    flex-wrap: wrap
+  .sec-services__item
+    width: 45%
+    margin-bottom: 3rem
+  .sec-services__item-icon
+    width: 100%
 @media (max-width: 500px)
+  .application_butt
+    width: 100%
   .set-title-line
     padding-left: 45px
     &::after

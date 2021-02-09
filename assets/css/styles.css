@@ -238,6 +238,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #000;
   line-height: 1;
+  background-color: #fff;
 }
 
 .main-clear:before, .main-clear:after {
@@ -284,6 +285,10 @@ body.compensate-for-scrollbar {
 
 .middle-container {
   max-width: 1324px;
+}
+
+.full-container {
+  max-width: 1778px;
 }
 
 a.link-up {
@@ -701,6 +706,34 @@ a:hover {
   top: 15px;
 }
 
+.danger {
+  color: red;
+}
+
+.team-mail-butt {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: url("../img/mail.png") center no-repeat;
+  background-color: #d31c54;
+  max-width: 168px;
+  margin: 0 auto;
+  transition: .4s;
+}
+
+.team-mail-butt:hover {
+  transform: scale(0.9);
+}
+
+.butt-click {
+  transition: .4s;
+}
+
+.butt-click:hover {
+  transform: scale(0.9);
+}
+
 @keyframes bounce-an {
   0%, 20%, 60%, 100% {
     transform: translateY(0);
@@ -828,7 +861,7 @@ a:hover {
 
 .footer {
   background-color: #120b25;
-  padding: 60px 10px;
+  padding: 6rem 1.5rem;
 }
 
 .footer .set-title-line {
@@ -851,6 +884,10 @@ a:hover {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 26px;
+}
+
+.sec-reviews {
+  padding-top: 6rem;
 }
 
 .reviews-area {
@@ -881,6 +918,259 @@ a:hover {
   background-position: 50%;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+.sec-application {
+  background-color: #292929;
+  padding: 6rem 0;
+}
+
+.sec-application__title {
+  color: #ffffff;
+  font-size: 4.8rem;
+  display: block;
+  padding-bottom: 6rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 300;
+}
+
+.sec-application-form {
+  width: 100%;
+  max-width: 985px;
+  margin: 0 auto;
+  display: block;
+}
+
+.application_label {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.application_input {
+  width: 100%;
+  color: #090909;
+  font-size: 2.2rem;
+  padding: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.application_butt {
+  border: 0px solid transparent;
+  text-transform: uppercase;
+  width: 450px;
+}
+
+.application_text {
+  resize: none;
+  min-height: 200px;
+}
+
+.sec-team {
+  padding: 1.4rem 0 6rem;
+}
+
+.sec-team-area {
+  padding-top: 4rem;
+}
+
+.team-item {
+  font-size: 1.4rem;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.team-item__face {
+  display: block;
+  width: 168px;
+  height: 180px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 0.5rem;
+}
+
+.team-item__info {
+  padding-left: 2rem;
+  font-weight: 700;
+}
+
+.team-item__name {
+  color: #d31c54;
+  font-size: 3rem;
+  display: block;
+  padding-bottom: 2.5rem;
+}
+
+.team-item__post {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.team-item__text {
+  line-height: 14px;
+}
+
+.sec-search-profi {
+  background: url("../img/profi-bg.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1052px;
+}
+
+.sec-services {
+  position: relative;
+  width: 100%;
+  padding: 20rem 0 20rem;
+  z-index: 10;
+  margin-top: -330px;
+  background: url("../img/services-bg.png") top center no-repeat;
+}
+
+.sec-services__link-page {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 8rem 4rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  font-size: 4.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #394c57;
+  position: absolute;
+  z-index: 1;
+  transition: .4s;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.sec-services__link-page::before {
+  transition: .4s;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 97%;
+  height: 97%;
+  border-radius: 50%;
+  background-color: #394c57;
+  border: 6px solid #ffffff;
+}
+
+.sec-services__link-page:hover {
+  transform: scale(0.9) translateX(-50%);
+}
+
+.sec-services__link-page:hover::before {
+  background-color: #d31c54;
+}
+
+.sec-services-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-services-area__col {
+  display: flex;
+  width: 44%;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.sec-services__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  width: 128px;
+  color: #fff;
+  text-align: center;
+  margin-right: 0.5rem;
+  transition: .4s;
+}
+
+.sec-services__item:hover {
+  transform: scale(0.9);
+}
+
+.sec-services__item-2 {
+  margin-top: -3rem;
+}
+
+.sec-services__item-3 {
+  margin-top: -5rem;
+}
+
+.sec-services__item-4 {
+  margin-top: -7rem;
+}
+
+.sec-services__item-5 {
+  margin-top: -7rem;
+}
+
+.sec-services__item-6 {
+  margin-top: -5rem;
+}
+
+.sec-services__item-7 {
+  margin-top: -3rem;
+}
+
+.sec-services__item:last-child {
+  margin-right: 0;
+}
+
+.sec-services__item-icon {
+  display: block;
+  width: 100%;
+  height: 128px;
+  margin-bottom: 1.5rem;
+}
+
+.s-icon_family {
+  background: url("../img/services/family.png") bottom center no-repeat;
+  background-size: contain;
+}
+
+.s-icon_housing {
+  background: url("../img/services/housing.png") center bottom no-repeat;
+  background-size: contain;
+}
+
+.s-icon_land {
+  background: url("../img/services/land.png") center bottom no-repeat;
+  background-size: contain;
+}
+
+.s-icon_tax {
+  background: url("../img/services/tax.png") bottom center no-repeat;
+  background-size: contain;
+}
+
+.s-icon_criminal {
+  background: url("../img/services/criminal.png") center bottom no-repeat;
+  background-size: contain;
+}
+
+.s-icon_avto {
+  background: url("../img/services/avto.png") center bottom no-repeat;
+  background-size: contain;
+}
+
+.s-icon_prava-potrebitely {
+  background: url("../img/services/prava-potrebitely.png") center bottom no-repeat;
+  background-size: contain;
+}
+
+.s-icon_other {
+  background: url("../img/services/other.png") center bottom no-repeat;
+  background-size: contain;
 }
 
 .content-area-page {
@@ -988,11 +1278,63 @@ a:hover {
   .container-page h1 {
     font-size: 4em;
   }
+  .sec-services__item {
+    width: 100px;
+  }
+  .sec-services__link-page {
+    padding: 6rem 3rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .sec-services-area__col {
+    width: 50%;
+  }
+  .team-item {
+    flex-direction: column;
+  }
+  .team-item__face {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-item__data {
+    margin-bottom: 1.5rem;
+  }
+  .team-item__name {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sec-services-area {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .sec-services-area__col {
+    width: 100%;
+  }
+  .sec-services {
+    padding: 7rem 0 10rem;
+  }
+  .sec-services__item-2, .sec-services__item-3, .sec-services__item-4, .sec-services__item-5, .sec-services__item-6, .sec-services__item-7 {
+    margin-top: 0rem;
+  }
+  .sec-services__link-page {
+    bottom: auto;
+    top: -50px;
+  }
 }
 
 @media (max-width: 1024px) {
   html, body {
     font-size: 60.5%;
+  }
+  .sec-services__item {
+    width: 80px;
+    font-size: 1.8rem;
+    align-items: center;
   }
   .footer-row {
     flex-direction: column;
@@ -1010,6 +1352,9 @@ a:hover {
   .footer-row__item {
     width: 100%;
   }
+  .sec-team-area {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1018,6 +1363,15 @@ a:hover {
   }
   .header__menu-btn-mob {
     display: block;
+  }
+  .sec-reviews, .sec-application, .sec-team {
+    padding: 4rem 0;
+  }
+  .footer {
+    padding: 4rem 1.5rem;
+  }
+  .sec-application__title {
+    padding-bottom: 3rem;
   }
   .reviews-author-face {
     margin: 0 auto 1rem;
@@ -1031,6 +1385,9 @@ a:hover {
 }
 
 @media (max-width: 620px) {
+  .sec-application__title {
+    font-size: 4rem;
+  }
   .footer-btn {
     flex-direction: column;
     align-items: flex-start;
@@ -1042,9 +1399,31 @@ a:hover {
     margin-bottom: 20px;
     margin-right: 0;
   }
+  .sec-services {
+    background: none;
+    background-image: linear-gradient(86deg, #d31c54 0%, #d31c54 29%, #c85320 100%);
+    border-top: 5px solid #fff;
+    padding: 10rem 0;
+  }
+  .sec-services__link-page {
+    top: -102px;
+  }
+  .sec-services-area__col {
+    flex-wrap: wrap;
+  }
+  .sec-services__item {
+    width: 45%;
+    margin-bottom: 3rem;
+  }
+  .sec-services__item-icon {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
+  .application_butt {
+    width: 100%;
+  }
   .set-title-line {
     padding-left: 45px;
   }
