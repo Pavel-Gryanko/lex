@@ -6,6 +6,17 @@ body.compensate-for-scrollbar
   max-width: 1324px
 .full-container
   max-width: 1778px
+p
+  font-size: 1.6rem
+  line-height: 24px
+.page-wrap
+  & p 
+    padding-bottom: 12px
+  a 
+    color: #cb432f
+    text-decoration: none
+    &:hover
+      text-decoration: underline
 a.link-up
   display: inline-block
   width: 48px
@@ -61,8 +72,10 @@ a
   &-jsa
     justify-content: space-around
   &-fc
+    display: flex
     flex-direction: column
   &-fw
+    display: flex
     flex-wrap: wrap
 .stl
   &-pl
@@ -163,10 +176,14 @@ a
       font-size: 3rem
     &-3_3
       font-size: 3.3rem
+    &-3_8
+      font-size: 3.8rem
     &-4
       font-size: 4rem
     &-5
       font-size: 5rem
+    &-6
+      font-size: 6rem
   &-tt-up
     text-transform: uppercase
 .after-animated
@@ -276,3 +293,22 @@ a
   transition: .4s
   &:hover
     transform: scale(0.9)
+.text-grad_dark
+  background-color: #394c57
+  color: #fff
+  padding: 10px 14px 10px 0
+.i-arrow_black
+  display: inline-block
+  width: 24px
+  height: 12px
+  background: url('../img/arrow-black.png') left center no-repeat
+  background-size: contain
+  cursor: pointer
+  position: relative
+  animation: arrow-hover 1s linear infinite
+.i-arrow_white
+  display: inline-block
+  width: 71px
+  height: 160px
+  background: url('../img/arrow-white.png') left center no-repeat
+  background-size: contain
