@@ -10,7 +10,7 @@
 
 .header__menu-btn-mob:hover {
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 .header__menu-btn-mob span {
@@ -45,6 +45,7 @@
 
 .header__menu-btn-mob_active span {
   height: 0px;
+  z-index: 200;
 }
 
 .header__menu-btn-mob_active span::before {

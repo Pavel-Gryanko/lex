@@ -38,7 +38,7 @@ $(document).ready(function () {
   $("a.header__menu-btn-mob").on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('header__menu-btn-mob_active');
-    $(".header__main-menu").toggleClass('header__main-menu_active');
+    $(".main-navbar").toggleClass('main-navbar_active');
   });
 
 });

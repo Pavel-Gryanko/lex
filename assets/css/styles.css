@@ -391,10 +391,12 @@ a:hover {
 }
 
 .df-jsb {
+  display: flex;
   justify-content: space-between;
 }
 
 .df-jsa {
+  display: flex;
   justify-content: space-around;
 }
 
@@ -629,22 +631,22 @@ a:hover {
   visibility: visible;
 }
 
-.section-indent {
-  margin-bottom: 70px;
-}
-
-.section-internal-indent {
-  padding: 70px 0px;
-}
-
 .section-title {
   font-size: 4em;
   font-weight: 400;
   text-align: center;
 }
 
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  width: 100%;
+  padding: 0.5rem 1rem 0;
+}
+
 .main-menu li.menu-item {
-  margin-right: 10px;
+  margin-right: 2rem;
 }
 
 .main-menu li.menu-item:last-child {
@@ -653,22 +655,42 @@ a:hover {
 
 .main-menu li.menu-item a {
   display: block;
-  padding: 10px 15px;
-  color: #6f6f6f;
+  font-size: 2.4rem;
+  color: #ffffff;
   position: relative;
   text-decoration: none;
   transition: .3s;
 }
 
+.main-menu li.menu-item a::after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  width: 45px;
+  height: 4px;
+  background-color: transparent;
+}
+
 .main-menu li.menu-item a:hover {
-  background-color: #42b3e5;
-  color: #ffffff;
   text-decoration: none;
 }
 
-.main-menu li.current-menu-item a {
-  background-color: #42b3e5;
-  color: #ffffff;
+.main-menu li.menu-item a:hover::after {
+  background-color: #d31c54;
+}
+
+.main-menu li.current-menu-item a::after {
+  background-color: #d31c54;
+}
+
+a.custom-logo:hover {
+  animation: bounce-an  1s linear;
+}
+
+.callvack-btn {
+  white-space: nowrap;
 }
 
 .btn {
@@ -787,6 +809,25 @@ a:hover {
   background-size: contain;
 }
 
+.lex_link-work {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -130px;
+  transform: translateY(-50%);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background: url("../img/header/click.png") left bottom no-repeat;
+  background-color: #d31c54;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.lex_link-work:hover {
+  transform: scale(0.9) translateY(-50%);
+}
+
 @keyframes bounce-an {
   0%, 20%, 60%, 100% {
     transform: translateY(0);
@@ -825,7 +866,7 @@ a:hover {
 
 .header__menu-btn-mob:hover {
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 .header__menu-btn-mob span {
@@ -860,6 +901,7 @@ a:hover {
 
 .header__menu-btn-mob_active span {
   height: 0px;
+  z-index: 200;
 }
 
 .header__menu-btn-mob_active span::before {
@@ -922,6 +964,131 @@ a:hover {
 
 .main-modal-header h3 {
   display: inline-block;
+}
+
+.header {
+  padding-top: 2.5rem;
+  position: relative;
+}
+
+.header-main {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 5rem;
+  max-width: 100%;
+  background: url("../img/header/top-bg.png") left top no-repeat;
+  background-size: cover;
+}
+
+.sec-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-navbar {
+  width: calc( 100% - 20%);
+}
+
+.sec-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sec-header__col {
+  width: 60%;
+  position: relative;
+  padding: 2rem 0 6rem 15rem;
+  color: #ffffff;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.sec-header__col::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  background-image: linear-gradient(to right, #f00b51 0%, #d31c54 48%, #ff6b28 100%);
+  opacity: 0.79;
+  width: 280px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.sec-header-title {
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.sec-header__suptitle {
+  font-family: 'Gotham Pro', sans-serif;
+  line-height: 132px;
+  font-size: 9.2rem;
+  padding-bottom: 4rem;
+  font-weight: 400;
+}
+
+.sec-header__text {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 30px;
+  padding-right: 20rem;
+}
+
+.lex-control {
+  display: flex;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  background-color: #43484a;
+  width: 100%;
+  margin-top: 20rem;
+}
+
+.lex-control__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 4rem;
+  width: 32%;
+}
+
+.lex-control__item:last-child {
+  width: 36%;
+}
+
+.lex-control__item_bg-g {
+  background-color: #565b5c;
+}
+
+.lex-control__item-text {
+  position: relative;
+  z-index: 1;
+  padding-left: 40px;
+  padding-top: 35px;
+}
+
+.lex-control__item-text::after {
+  position: absolute;
+  z-index: -1;
+  content: '01';
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 10.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #393c3f;
+  left: -40px;
+  top: -20px;
+}
+
+.lex-title_line {
+  display: inline-block;
+  height: 1px;
+  width: 27%;
+  margin-left: 2rem;
+  background-color: #dad6d6;
 }
 
 .footer {
@@ -1484,9 +1651,41 @@ a:hover {
   }
 }
 
+@media (max-width: 1500px) {
+  .main-menu li.menu-item a {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 1366px) {
   .container-page h1 {
     font-size: 4em;
+  }
+  .sec-header__suptitle {
+    font-size: 6.2rem;
+    line-height: 62px;
+  }
+  .lex-control__item-text::after {
+    font-size: 7.4rem;
+    left: 0;
+  }
+  .lex_link-work {
+    width: 200px;
+    height: 200px;
+    background-size: 50%;
+    right: -70px;
+  }
+  .sec-header__col {
+    padding-left: 6rem;
+  }
+  .custom-logo {
+    width: 15%;
+  }
+  .main-menu li.menu-item {
+    margin-right: 1rem;
+  }
+  .main-navbar {
+    width: calc( 100% - 17%);
   }
   .sec-services__item {
     width: 100px;
@@ -1501,6 +1700,43 @@ a:hover {
 }
 
 @media (max-width: 1250px) {
+  .custom-logo {
+    width: auto;
+  }
+  .header__menu-btn-mob {
+    display: block;
+  }
+  .main-navbar {
+    display: none;
+  }
+  .main-navbar_active {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 80vh;
+    padding: 1.5rem;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    top: 10px;
+    width: 100%;
+  }
+  .main-navbar_active .main-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+  .main-navbar_active .main-menu .menu-item {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .main-navbar_active .main-menu .menu-item a {
+    font-size: 3rem;
+  }
+  .callvack-btn {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
   .sec-services-area__col {
     width: 50%;
   }
@@ -1521,6 +1757,20 @@ a:hover {
 }
 
 @media (max-width: 1200px) {
+  .custom-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .lex_link-work {
+    top: 20%;
+    transform: translateY(0%);
+  }
+  .lex_link-work:hover {
+    transform: scale(0.9) translateY(0%);
+  }
+  .sec-header__col {
+    width: 100%;
+  }
   .sec-process__item {
     font-size: 2.8rem;
   }
@@ -1624,14 +1874,23 @@ a:hover {
   html, body {
     font-size: 56.5%;
   }
-  .header__menu-btn-mob {
-    display: block;
-  }
   .sec-reviews, .sec-application, .sec-team, .sec-about-numbers, .sec-process, .sec-cooperation {
     padding: 4rem 0;
   }
   .footer {
     padding: 4rem 1.5rem;
+  }
+  .sec-header__col {
+    padding-left: 2rem;
+  }
+  .sec-header__col::after {
+    width: 130px;
+  }
+  .lex-control__item {
+    width: 33%;
+  }
+  .lex-control__item:last-child {
+    width: 33%;
   }
   .sec-application__title {
     padding-bottom: 3rem;
@@ -1654,6 +1913,27 @@ a:hover {
 }
 
 @media (max-width: 620px) {
+  .sec-header-title {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  .sec-header__suptitle {
+    font-size: 4.2rem;
+    line-height: 42px;
+  }
+  .lex-control {
+    margin-top: 10rem;
+    font-size: 1.6rem;
+  }
+  .lex-control__item-text {
+    padding-top: 3px;
+  }
+  .lex-control__item-text::after {
+    font-size: 5.2rem;
+  }
+  .callvack-btn {
+    width: 100%;
+  }
   .sec-process-area {
     flex-direction: column;
   }
@@ -1710,6 +1990,13 @@ a:hover {
 }
 
 @media (max-width: 500px) {
+  .lex-control__item-text {
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+  .custom-logo {
+    width: 50%;
+  }
   .sec-search-profi-title {
     font-size: 3.5rem;
   }

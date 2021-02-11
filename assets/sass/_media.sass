@@ -6,9 +6,35 @@
       height: 175px
   .i-arrow_white
     height: 100px
+@media (max-width: 1500px)
+  .main-menu
+    & li.menu-item 
+      & a
+        font-size: 2rem
 @media (max-width: 1366px)
   .container-page h1
     font-size: 4em
+  .sec-header-title
+  .sec-header__suptitle
+    font-size: 6.2rem
+    line-height: 62px
+  .lex-control__item-text::after
+    font-size: 7.4rem
+    left: 0
+  .lex_link-work
+    width: 200px
+    height: 200px
+    background-size: 50%
+    right: -70px
+  .sec-header__col
+    padding-left: 6rem
+  .custom-logo
+    width: 15%
+  .main-menu
+    & li.menu-item 
+      margin-right: 1rem
+  .main-navbar 
+    width: calc( 100% - 17%)
   .sec-services__item
     width: 100px
   .sec-services__link-page
@@ -17,6 +43,35 @@
   .sec-cooperation p
     font-size: 3.2rem
 @media (max-width: 1250px)
+  .custom-logo
+    width: auto
+  .header__menu-btn-mob
+    display: block
+  .main-navbar
+    display: none
+  .main-navbar_active
+    display: flex
+    flex-direction: column
+    background-color: #000
+    height: 80vh
+    padding: 1.5rem
+    position: absolute
+    left: 0
+    z-index: 100
+    top: 10px
+    width: 100%
+    & .main-menu
+      flex-direction: column
+      padding: 0
+      & .menu-item
+        margin-right: 0
+        margin-bottom: 3rem
+        & a
+          font-size: 3rem
+  .callvack-btn
+    display: block
+    width: 50%
+    margin: 0 auto
   .sec-services-area__col
     width: 50%
   .team-item
@@ -30,6 +85,16 @@
     text-align: center
     padding-bottom: 1rem
 @media (max-width: 1200px)
+  .custom-logo
+    display: block
+    margin: 0 auto
+  .lex_link-work 
+    top: 20%
+    transform: translateY(0%)
+    &:hover
+      transform: scale(0.9) translateY(0%)
+  .sec-header__col
+    width: 100%
   .sec-process__item
     font-size: 2.8rem
     &_ell
@@ -101,12 +166,18 @@
 @media (max-width: 768px)
   html, body
     font-size: 56.5%
-  .header__menu-btn-mob
-    display: block
   .sec-reviews, .sec-application, .sec-team, .sec-about-numbers, .sec-process, .sec-cooperation
     padding: 4rem 0
   .footer
     padding: 4rem 1.5rem
+  .sec-header__col
+    padding-left: 2rem
+    &::after 
+      width: 130px
+  .lex-control__item
+    width: 33%
+    &:last-child
+      width: 33%
   .sec-application__title
     padding-bottom: 3rem
   .reviews-author-face
@@ -120,6 +191,21 @@
   .sec-cooperation p
     font-size: 2.6rem
 @media (max-width: 620px)
+  .sec-header-title
+    font-size: 2rem
+    margin-bottom: 4rem
+  .sec-header__suptitle
+    font-size: 4.2rem
+    line-height: 42px
+  .lex-control
+    margin-top: 10rem
+    font-size: 1.6rem
+  .lex-control__item-text
+    padding-top: 3px
+    &::after
+      font-size: 5.2rem
+  .callvack-btn
+    width: 100%
   .sec-process-area
     flex-direction: column
     & span
@@ -160,6 +246,11 @@
   .sec-services__item-icon
     width: 100%
 @media (max-width: 500px)
+  .lex-control__item-text
+    padding-left: 5px
+    padding-top: 10px
+  .custom-logo
+    width: 50%
   .sec-search-profi-title
     font-size: 3.5rem
   .sec-search-profi__col 

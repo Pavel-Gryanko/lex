@@ -68,8 +68,10 @@ a
     display: flex
     justify-content: flex-end
   &-jsb
+    display: flex
     justify-content: space-between
   &-jsa
+    display: flex
     justify-content: space-around
   &-fc
     display: flex
@@ -202,34 +204,49 @@ a
     &::after
       width: 100%
       visibility: visible
-.section-indent
-  margin-bottom: 70px
-.section-internal-indent
-  padding: 70px 0px
 .section-title
   font-size: 4em
   font-weight: 400
   text-align: center
 .main-menu
+  display: flex
+  justify-content: space-between
+  max-width: 1010px
+  width: 100%
+  padding: 0.5rem 1rem 0
   & li.menu-item
-    margin-right: 10px
+    margin-right: 2rem
     &:last-child
       margin-right: 0px
     & a
       display: block
-      padding: 10px 15px
-      color: #6f6f6f
+      font-size: 2.4rem
+      color: #ffffff
       position: relative
       text-decoration: none
       transition: .3s
+      &::after
+        position: absolute
+        transition: .3s
+        content: ''
+        bottom: -10px
+        left: 0
+        width: 45px
+        height: 4px
+        background-color: transparent
       &:hover
-        background-color: #42b3e5
-        color: #ffffff
         text-decoration: none
+        &::after
+          background-color: #d31c54
   & li.current-menu-item
     & a
-      background-color: #42b3e5
-      color: #ffffff
+      &::after
+        background-color: #d31c54
+a.custom-logo
+  &:hover
+    animation: bounce-an  1s linear
+.callvack-btn
+  white-space: nowrap
 .btn
   color: #ffffff
   padding: 14px 21px
@@ -312,3 +329,18 @@ a
   height: 160px
   background: url('../img/arrow-white.png') left center no-repeat
   background-size: contain
+.lex_link-work
+  display: block
+  position: absolute
+  top: 50%
+  right: -130px
+  transform: translateY(-50%)
+  background-size: cover
+  width: 300px
+  height: 300px
+  background: url('../img/header/click.png') left bottom no-repeat
+  background-color: #d31c54
+  border-radius: 50%
+  transition: .3s
+  &:hover
+    transform: scale(0.9) translateY(-50%)
