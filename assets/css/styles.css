@@ -1712,6 +1712,7 @@ a.custom-logo:hover {
   .main-navbar_active {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #000;
     height: 80vh;
     padding: 1.5rem;
