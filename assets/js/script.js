@@ -1,7 +1,7 @@
 $(document).ready(function () {
 /**
   // Маска телефона в форме
-  $(".phone-inp").mask("+7 (999) 999-99-99");
+  $(".phone_inp").mask("+7 (999) 999-99-99");
 
   // Обертка таблицы wp
   $('figure.wp-block-table').children().unwrap();
